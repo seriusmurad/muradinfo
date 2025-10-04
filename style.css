@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/* Global Overrides */
+:root {
+    scroll-behavior: smooth;
+}
+body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a; /* Deep Slate (Tailwind gray-900) */
+            color: #d1d5db; /* Light gray text */
+        }
+
+        /* Navigation Links */
+        .nav-link {
+            cursor: pointer;
+            transition: color 0.3s, transform 0.2s;
+            text-shadow: 0 0 5px rgba(14, 165, 233, 0.2); 
+        }
+        .nav-link:hover {
+            color: #38bdf8; /* Sky 400 (brighter) */
+            transform: translateY(-2px);
+        }
+        .active-link {
+            color: #0ea5e9 !important; /* Sky 500 */
+            font-weight: 700;
+            border-bottom: 2px solid #0ea5e9;
+            padding-bottom: 4px;
+        }
+
+        /* Card Interactivity (Projects) */
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+            border: 1px solid #1f2937; /* Dark border */
+        }
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 25px -5px rgba(0, 0, 0, 0.4); /* Stronger shadow on hover */
+            background-color: #1f2937; /* Slightly lighter background on hover */
+        }
+
+        /* Section Heading Style */
+        .section-heading {
+            /* Using @apply for utility classes is fine in single-file custom CSS */
+            text-align: center;
+            font-size: 2.25rem; /* 36px - text-4xl */
+            font-weight: 700; /* font-bold */
+            color: white; /* text-white */
+            margin-bottom: 4rem; /* mb-16 */
+            border-bottom: 2px solid rgba(14, 165, 233, 0.5); /* border-sky-500/50 */
+            display: inline-block;
+            padding-bottom: 0.25rem; /* pb-1 */
+        }
+
+        /* Achievements Section: Alternating Layout */
+        .achievement-row {
+            display: grid;
+            gap: 2rem; /* gap-8 */
+            padding: 1.5rem; /* p-6 */
+            background-color: #1f2937; /* bg-gray-800 */
+            border-radius: 0.75rem; /* rounded-xl */
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); /* shadow-xl */
+            border-color: #0ea5e9; /* border-sky-500 */
+        }
+        
+        /* Grid setup for large screens */
+        @media (min-width: 1024px) {
+            .achievement-row {
+                grid-template-columns: repeat(3, 1fr); /* lg:grid-cols-3 */
+            }
+        }
+
+        /* Style for the alternating border color */
+        .achievement-row:nth-child(odd) {
+            border-left-width: 4px;
+            border-right-width: 0;
+        }
+        .achievement-row:nth-child(even) {
+            border-right-width: 4px;
+            border-left-width: 0;
+        }
+        /* Ensure mobile layout stacks correctly */
+        @media (max-width: 1023px) { /* Tailwind 'lg' breakpoint -1 */
+            .achievement-row {
+                border-left-width: 4px !important;
+                border-right-width: 0 !important;
+            }
+        }
+    

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md Murad Hossain - Modern Portfolio</title>
+    <!-- Load Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    
+</head>
+<body class="text-gray-300">
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-gray-900 shadow-2xl border-b border-gray-700">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
+            <a href="#home" class="text-2xl font-extrabold text-white nav-link tracking-wider">M. Hossain<span class="text-sky-400">.dev</span></a>
+            <div class="flex space-x-6">
+                <a href="#about" class="text-gray-400 hover:text-sky-400 nav-link hidden sm:inline-block text-sm font-medium">ABOUT</a>
+                <a href="#skills" class="text-gray-400 hover:text-sky-400 nav-link hidden sm:inline-block text-sm font-medium">SKILLS</a>
+                <a href="#projects" class="text-gray-400 hover:text-sky-400 nav-link hidden sm:inline-block text-sm font-medium">PROJECTS</a>
+                <a href="#achievements" class="text-gray-400 hover:text-sky-400 nav-link hidden sm:inline-block text-sm font-medium">AWARDS</a>
+                <a href="mailto:youremail@example.com" class="bg-sky-600 hover:bg-sky-500 text-white px-4 py-1 rounded-full text-sm font-semibold transition duration-300 shadow-lg shadow-sky-600/30">CONTACT</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 1. Hero Section (Home) -->
+        <section id="home" class="pt-32 pb-24 bg-gray-900 min-h-[90vh] flex items-center">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center justify-between gap-12">
+                
+                <!-- Text Content -->
+                <div class="lg:w-3/5 text-center lg:text-left">
+                    <p class="text-lg text-sky-400 font-semibold mb-3 tracking-widest">
+                        COMPUTER SCIENCE STUDENT
+                    </p>
+                    <h1 class="text-5xl sm:text-7xl font-extrabold text-white leading-tight mb-6">
+                        Hi, I'm <span class="text-sky-400">Md Murad Hossain</span>
+                    </h1>
+                    <p class="text-2xl text-gray-400 mb-8 max-w-xl">
+                       Passionate full-stack developer, always exploring new technologies.
+                    </p>
+                    <div class="space-x-4 mt-8">
+                        <a href="#projects" class="inline-block px-10 py-3 bg-sky-600 text-white text-lg font-bold rounded-lg shadow-xl shadow-sky-600/30 hover:bg-sky-700 transition duration-300 transform hover:scale-[1.02]">
+                            Explore Work &darr;
+                        </a>
+                        <a href="#about" class="inline-block px-10 py-3 border-2 border-gray-600 text-gray-300 text-lg font-semibold rounded-lg hover:bg-gray-700 transition duration-300 transform hover:scale-[1.02]">
+                            Read My Story
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Photo Placeholder -->
+                <div class="lg:w-2/5 flex justify-center lg:justify-end mt-10 lg:mt-0">
+                    <!-- Placeholder for your photo. Replace the URL with your actual image URL. -->
+                    <div class="relative w-72 h-72 sm:w-80 sm:h-80 p-2 bg-gray-800 rounded-full shadow-2xl shadow-sky-500/20">
+                        <img src="murad.jpg" alt="Md Murad Hossain Portrait" class="w-full h-full object-cover rounded-full border-4 border-sky-500">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. About Section -->
+      <section id="about" class="py-24 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900">
+  <div class="container mx-auto px-6 lg:px-12">
+    <!-- Heading -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-white tracking-wide mb-4">Who Am I?</h2>
+      <p class="text-lg text-gray-400 max-w-2xl mx-auto">
+        A passionate learner & aspiring software engineer, always eager to explore new technologies and build impactful solutions.
+      </p>
+    </div>
+
+    <!-- Content Grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+      
+      <!-- Left: Profile Card -->
+      <div class="bg-gray-800 rounded-2xl shadow-2xl shadow-gray-900/60 p-8 text-center">
+        <div class="w-40 h-40 mx-auto mb-6 rounded-full border-4 border-sky-400 overflow-hidden">
+          <img src="murad.jpg" alt="Profile" class="w-full h-full object-cover">
+        </div>
+        <h3 class="text-2xl font-bold text-white mb-2">Md Murad Hossain</h3>
+        <p class="text-sky-400 text-lg mb-4">CSE Student • Southeast University</p>
+        <p class="text-gray-300 leading-relaxed">
+          Curious mind, problem solver, and tech enthusiast. 
+          I love designing scalable solutions and bringing creative ideas to life.
+        </p>
+      </div>
+
+      <!-- Right: Timeline / Snapshot -->
+      <div class="space-y-6">
+        <div class="bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-sky-500/30 transition">
+          <h4 class="text-xl font-semibold text-sky-400 mb-2">🎓 Education</h4>
+          <p class="text-gray-300">B.Sc in Computer Science & Engineering at <span class="font-bold">Southeast University</span>, 16th Batch.</p>
+        </div>
+        <div class="bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-sky-500/30 transition">
+          <h4 class="text-xl font-semibold text-sky-400 mb-2">💻 Skills</h4>
+          <p class="text-gray-300">Data Structures, Algorithms, System Design, and Real-world Project Development.</p>
+        </div>
+        <div class="bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-sky-500/30 transition">
+          <h4 class="text-xl font-semibold text-sky-400 mb-2">🩸 Personal</h4>
+          <p class="text-gray-300"><span class="font-bold">Blood Group:</span> O+ | Passionate about continuous learning.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <!-- 3. Skills Section (Icons) -->
+        <section id="skills" class="py-24 bg-gray-900">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="section-heading text-3xl font-bold text-white mb-12 tracking-wide text-center">TECHNICAL SKILLS</h2>
+
+
+                <!-- Display skills using descriptive icons and text -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 max-w-6xl mx-auto text-center">
+
+                       <!-- Skill 1: HTML & CSS (Tailwind) -->
+                    <div class="skill-icon-card p-4 rounded-xl bg-gray-800 hover:bg-gray-700 transition duration-300 transform hover:scale-105">
+                        <div class="text-5xl mb-2 text-orange-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor"><path d="M4 3.75h16l-1.5 15L12 21.5l-6.5-2.75L4 3.75zm12.33 5.67L12 10.5l-4.33-1.08-.25 2.75 4.58 1.08 4.33-1.08-.25-2.75zm-1.83 5.25l-4.5 1.08-.25-2.75 4.75-1.17.25 2.84z"/></svg>
+                        </div>
+                        <p class="text-sm font-semibold text-white mt-1">HTML & CSS</p>
+                    </div>
+
+                       <!-- Skill 2: C / C++ -->
+                    <div class="skill-icon-card p-4 rounded-xl bg-gray-800 hover:bg-gray-700 transition duration-300 transform hover:scale-105">
+                        <div class="text-5xl mb-2 text-blue-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor"><path d="M18.8 4H5.2C4.54 4 4 4.54 4 5.2v13.6c0 .66.54 1.2 1.2 1.2h13.6c.66 0 1.2-.54 1.2-1.2V5.2c0-.66-.54-1.2-1.2-1.2zm-2.93 11.2h-2.52c-.52 0-.84-.33-.84-.81 0-.39.19-.66.52-.84.45-.25.99-.4 1.62-.48.66-.08 1.13-.17 1.41-.26.39-.14.65-.4.65-.8 0-.46-.35-.74-.95-.74-.6 0-1.1.25-1.56.74l-.45.49-1.23-1.53c.56-.57 1.2-.9 2.02-.9 1.14 0 1.95.54 1.95 1.63 0 .74-.47 1.21-1.3 1.57-.47.2-.82.3-.99.34-.3.06-.44.17-.44.27 0 .19.16.29.56.29h2.32c.52 0 .8.34.8.84 0 .4-.36.7-.91.7zm-6.62 0h-2.52c-.52 0-.84-.33-.84-.81 0-.39.19-.66.52-.84.45-.25.99-.4 1.62-.48.66-.08 1.13-.17 1.41-.26.39-.14.65-.4.65-.8 0-.46-.35-.74-.95-.74-.6 0-1.1.25-1.56.74l-.45.49-1.23-1.53c.56-.57 1.2-.9 2.02-.9 1.14 0 1.95.54 1.95 1.63 0 .74-.47 1.21-1.3 1.57-.47.2-.82.3-.99.34-.3.06-.44.17-.44.27 0 .19.16.29.56.29h2.32c.52 0 .8.34.8.84 0 .4-.36.7-.91.7z"/></svg>
+                        </div>
+                        <p class="text-sm font-semibold text-white mt-1">C/C++</p>
+                    </div>
+                    
+                    <!-- Skill 3: JavaScript -->
+                    <div class="skill-icon-card p-4 rounded-xl bg-gray-800 hover:bg-gray-700 transition duration-300 transform hover:scale-105">
+                        <div class="text-5xl mb-2 text-yellow-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor"><path d="M7.784 14.867c.18.318.423.593.731.826a4.9 4.9 0 0 0 .979.626c.381.189.782.34 1.185.45.405.107.817.161 1.228.161.545 0 1.05-.115 1.516-.346.467-.23.832-.559 1.096-.988.265-.429.397-.962.397-1.597 0-.54-.112-1.002-.335-1.393-.223-.39-.569-.7-1.036-.928-.466-.228-1.074-.403-1.82-.524l-1.01-.161c-.559-.092-.938-.215-1.135-.369-.199-.153-.298-.37-.298-.654 0-.256.07-.468.21-.632.14-.166.363-.25.667-.25.293 0 .584.07.868.21.284.14.542.348.775.626.233.278.41.603.53.974l2.426-.475c-.179-.588-.456-1.127-.831-1.614a5.418 5.418 0 0 0-1.258-1.156c-.456-.254-.993-.42-1.61-.497a4.9 4.9 0 0 0-1.896.002c-.524.11-1.01.328-1.458.653-.448.326-.807.755-1.076 1.285-.268.53-.403 1.168-.403 1.913 0 .61.123 1.15.37 1.62.246.47.625.864 1.135 1.184.385.244.887.433 1.507.57l1.01.161c.646.107 1.1.256 1.364.448.267.19.4-.447 0 .807-.071.29-.21.529-.418.718a1.693 1.693 0 0 1-.68.271 2.7 2.7 0 0 1-.775.053c-.347-.035-.71-.11-1.077-.223-.367-.113-.736-.296-1.107-.549l-1.114 1.942zm-1.815-9.663c0-.12-.04-.2-.12-.24-.078-.042-.19-.063-.336-.063H3.606v4.615h.923v-3.7h2.15c.146 0 .258-.02.336-.063.08-.04.12-.12.12-.24zM24 12c0 6.627-5.373 12-12 12s-12-5.373-12-12 5.373-12 12-12 12 5.373 12 12zM.833 12c0 6.166 5.001 11.167 11.167 11.167s11.167-5.001 11.167-11.167-5.001-11.167-11.167-11.167S.833 5.834.833 12z"/></svg>
+                        </div>
+                        <p class="text-sm font-semibold text-white mt-1">JavaScript</p>
+                    </div>
+
+                    <!-- Skill 4: Python -->
+                    <div class="skill-icon-card p-4 rounded-xl bg-gray-800 hover:bg-gray-700 transition duration-300 transform hover:scale-105">
+                        <div class="text-5xl mb-2 text-indigo-400">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0L6.75 3.19v5.12L12 11.51l5.25-3.19V3.19L12 0zm0 13.51L6.75 10.32v5.12L12 18.63l5.25-3.19v-5.12L12 13.51zM1.5 6.38L6.75 9.57v3.52L1.5 10.15V6.38zM17.25 9.57L22.5 6.38v3.77L17.25 13.09V9.57zM1.5 13.92L6.75 17.11v3.52L1.5 17.44v-3.52zM17.25 17.11L22.5 13.92v3.77L17.25 21.03v-3.92z"/></svg>
+                        </div>
+                        <p class="text-sm font-semibold text-white mt-1">Python</p>
+                    </div>
+
+
+                    <!-- Skill 5: Databases (MySQL/MongoDB) -->
+                    <div class="skill-icon-card p-4 rounded-xl bg-gray-800 hover:bg-gray-700 transition duration-300 transform hover:scale-105">
+                        <div class="text-5xl mb-2 text-red-500">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c-5.523 0-10 2.239-10 5s4.477 5 10 5 10-2.239 10-5-4.477-5-10-5zm0 8c-4.418 0-8-1.343-8-3s3.582-3 8-3 8 1.343 8 3-3.582 3-8 3zm0 5c-5.523 0-10 2.239-10 5s4.477 5 10 5 10-2.239 10-5-4.477-5-10-5zm0 8c-4.418 0-8-1.343-8-3s3.582-3 8-3 8 1.343 8 3-3.582 3-8 3z"/></svg>
+                        </div>
+                        <p class="text-sm font-semibold text-white mt-1">MySQL</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Projects Section -->
+        <section id="projects" class="py-24 bg-gray-800 border-t border-b border-gray-700">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="section-heading text-3xl font-bold text-white mb-12 tracking-wide text-center">FEATURED PROJECTS</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                    <!-- Project Card 1 -->
+                    <div class="card bg-gray-700 rounded-xl shadow-xl overflow-hidden">
+                        <div class="p-6">
+                            <span class="text-xs font-medium text-sky-400 mb-2 block tracking-wider uppercase">Full Stack Application</span>
+                            <h3 class="text-2xl font-bold text-white mb-3">University Management System</h3>
+                            <p class="text-gray-400 mb-4 text-sm">A complete system for managing student records, course enrollment, and faculty information with user roles and authentication.</p>
+                            <div class="flex flex-wrap gap-2 mt-4">
+                                <span class="bg-blue-800 text-blue-300 text-xs font-medium px-2.5 py-0.5 rounded-full">PHP</span>
+                                <span class="bg-blue-800 text-blue-300 text-xs font-medium px-2.5 py-0.5 rounded-full">MySQL</span>
+                            </div>
+                            <div class="mt-6">
+                                <a href="https://github.com/yourusername/project1" target="_blank" class="text-sky-400 hover:text-sky-300 font-semibold text-sm transition duration-300">View Source Code &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2 -->
+                    <div class="card bg-gray-700 rounded-xl shadow-xl overflow-hidden">
+                        <div class="p-6">
+                            <span class="text-xs font-medium text-sky-400 mb-2 block tracking-wider uppercase">Algorithm & Data Structures</span>
+                            <h3 class="text-2xl font-bold text-white mb-3">C++ Algorithm Visualizer</h3>
+                            <p class="text-gray-400 mb-4 text-sm">A desktop application that visually demonstrates the execution of various core algorithms (Sort, Search, Graphs) for educational purposes.</p>
+                            <div class="flex flex-wrap gap-2 mt-4">
+                                <span class="bg-purple-800 text-purple-300 text-xs font-medium px-2.5 py-0.5 rounded-full">C++</span>
+                                <span class="bg-purple-800 text-purple-300 text-xs font-medium px-2.5 py-0.5 rounded-full">Algorithms</span>
+                            </div>
+                            <div class="mt-6">
+                                <a href="https://github.com/yourusername/project2" target="_blank" class="text-sky-400 hover:text-sky-300 font-semibold text-sm transition duration-300">View Source Code &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 3 -->
+                    <div class="card bg-gray-700 rounded-xl shadow-xl overflow-hidden">
+                        <div class="p-6">
+                            <span class="text-xs font-medium text-sky-400 mb-2 block tracking-wider uppercase">Vanilla JS Web App</span>
+                            <h3 class="text-2xl font-bold text-white mb-3">Simple Expense Tracker</h3>
+                            <p class="text-gray-400 mb-4 text-sm">A responsive, single-page application for tracking daily expenses, using client-side storage for immediate persistence.</p>
+                            <div class="flex flex-wrap gap-2 mt-4">
+                                <span class="bg-yellow-800 text-yellow-300 text-xs font-medium px-2.5 py-0.5 rounded-full">JavaScript</span>
+                                <span class="bg-yellow-800 text-yellow-300 text-xs font-medium px-2.5 py-0.5 rounded-full">HTML5</span>
+                            </div>
+                            <div class="mt-6">
+                                <a href="https://github.com/yourusername/project3" target="_blank" class="text-sky-400 hover:text-sky-300 font-semibold text-sm transition duration-300">View Source Code &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-16">
+                     <a href="https://github.com/seriusmurad?tab=repositories" target="_blank" class="inline-block px-8 py-3 border-2 border-sky-500 text-sky-400 font-semibold rounded-lg hover:bg-sky-600/10 transition duration-300 transform hover:scale-105">
+                            See All GitHub Repositories &rarr;
+                        </a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 5. Achievements Section (Alternating Photo Layout) -->
+        <section id="achievements" class="py-24 bg-gray-900">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+               <h2 class="section-heading text-3xl font-bold text-white mb-12 tracking-wide text-center">AWARDS & RECOGNITION</h2>
+
+                <div class="max-w-6xl mx-auto space-y-12">
+
+                    <!-- Achievement Item 1: Photo Left, Text Right (Default order) -->
+                    <div class="achievement-row">
+                        <!-- Image Container (Left on large screens) -->
+  <div class="flex justify-center items-center lg:col-span-4 gap-4">
+   <div class="flex justify-center items-center gap-4 flex-wrap">
+
+    
+    <!-- Center Image -->
+    <img src="award.jpg" alt="Center Award" class="flex-1 w-full h-64 rounded-lg object-cover border-2 border-sky-500 shadow-xl">
+    
+ 
+</div>
+
+</div>
+                 <!-- Description Container (Right on large screens) -->
+                        <div class="lg:col-span-2 p-4">
+                            <h3 class="text-2xl font-bold text-white">1st Runner-Up - Southeast University National Inter-College Contest – Explore Yourself Season 2</h3>
+                            <p class="text-gray-400 mt-2 text-lg">Secured the second position in the "Explore Yourself Season 2" Inter-College Photo Contest at Southeast University, showcasing creativity and photography skills.</p>
+                            <p class="text-sm text-gray-500 mt-3 font-semibold">October 2022 | Southeast University</p>
+                        </div>
+                    </div>
+
+                    <!-- Achievement Item 1: Photo Left, Text Right (Default order) -->
+                    <div class="achievement-row">
+                        <!-- Image Container (Left on large screens) -->
+<div class="flex justify-center items-center lg:col-span-4 gap-4">
+  
+   <div class="flex justify-center items-center gap-4 flex-wrap">
+
+    
+    <!-- Center Image -->
+    <img src="ct.png" alt="Center Award" class="flex-1 w-full h-64 rounded-lg object-cover border-2 border-sky-500 shadow-xl">
+    
+ 
+</div>
+   
+</div>
+                        <!-- Description Container (Right on large screens) -->
+                        <div class="lg:col-span-2 p-4">
+                                        <h3 class="text-2xl font-bold text-white mt-6">Completed Professional PHP & Laravel Course</h3>
+                                        <p class="text-gray-400 mt-2 text-lg">Successfully completed a comprehensive PHP and Laravel course from Creatieve IT, gaining in-depth knowledge of backend development, web applications, and MVC architecture.</p>
+                                        <p class="text-sm text-gray-500 mt-3 font-semibold">2023 | Creatieve IT</p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 6. Footer -->
+    <footer class="bg-gray-950 text-white py-10 border-t border-sky-600/50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-xl font-bold text-sky-400 mb-2">Md Murad Hossain</p>
+            <p class="text-gray-400 mb-6">CSE, 16th Batch | Aspiring Full-Stack Developer</p>
+
+            <div class="flex justify-center space-x-6 text-2xl mb-8">
+                <!-- Social Icons (Using SVG) -->
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" class="hover:text-sky-400 transition duration-300 transform hover:scale-110">
+                    <span class="sr-only">LinkedIn</span>
+                    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.529-4 0v5.604h-3v-11h3v1.765c1.395-2.285 5-2.091 5 2.247v6.988z" />
+                    </svg>
+                </a>
+                <a href="https://github.com/yourusername" target="_blank" class="hover:text-sky-400 transition duration-300 transform hover:scale-110">
+                    <span class="sr-only">GitHub</span>
+                    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.385 3.5 9.9 8.243 11.459.6.111.77-.26.77-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.542-1.368-1.326-1.734-1.326-1.734-1.088-.745.084-.73.084-.73 1.205.084 1.838 1.238 1.838 1.238 1.07 1.835 2.809 1.305 3.491.996.108-.775.419-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.31.465-2.381 1.236-3.22-.124-.305-.537-1.528.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.046.138 3.003.404 2.292-1.552 3.3-1.23 3.3-1.23.654 1.648.241 2.871.117 3.176.773.839 1.236 1.91 1.236 3.22 0 4.609-2.807 5.624-5.479 5.923.43.372.823 1.102.823 2.222 0 1.604-.015 2.894-.015 3.286 0 .318.17.694.775.576 4.742-1.569 8.24-6.084 8.24-11.459.001-6.627-5.372-12-11.999-12z" />
+                    </svg>
+                </a>
+                <a href="mailto:youremail@example.com" class="hover:text-sky-400 transition duration-300 transform hover:scale-110">
+                    <span class="sr-only">Email</span>
+                    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z" />
+                    </svg>
+                </a>
+            </div>
+
+            <p class="text-sm text-gray-500 mt-4">&copy; 2025 Md Murad Hossain. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
